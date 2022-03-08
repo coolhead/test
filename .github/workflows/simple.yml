@@ -15,6 +15,9 @@ jobs:
        - name: python command
          run: |
           import platform
-          print(python.processor())
+          def print_sys_info():
+            print('# Platform\n')
+            print('platform :', platform.platform())
+          # print(python.processor())
           shell: python
 
