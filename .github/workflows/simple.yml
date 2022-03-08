@@ -12,12 +12,9 @@ jobs:
          run: |
           node -v
           npm -v
-       - name: python command
+       - name: python Command
          run: |
           import platform
-          def print_sys_info():
-            print('# Platform\n')
-            print('platform :', platform.platform())
-          # print(python.processor())
-          shell: python
+          print(python.processor())
+         shell: python
 
